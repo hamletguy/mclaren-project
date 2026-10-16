@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McLaren | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">McLaren</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="racing.html">Racing</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-intro">
+      <h1>Contact</h1>
+      <p>Questions about the cars, the team or this website? Send us a message.</p>
+    </section>
+
+    <div class="contact-layout">
+
+      <!-- Form -->
+      <section class="contact-form">
+        <h2>Send us a message</h2>
+        <form action="#" method="post">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="general">General question</option>
+            <option value="sales">Buying a McLaren</option>
+            <option value="racing">Racing and the F1 team</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </section>
+
+      <!-- Info -->
+      <section class="contact-info">
+        <h2>Where to find us</h2>
+
+        <address>
+          McLaren Technology Centre<br>
+          Chertsey Road<br>
+          Woking, Surrey GU21 4YH<br>
+          United Kingdom
+        </address>
+
+        <!-- PICTURE or MAP: embed a map of the McLaren Technology Centre -->
+        <div class="placeholder map">Map: McLaren Technology Centre, Woking</div>
+
+        <h3>Follow McLaren</h3>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/mclaren/">Instagram</a></li>
+          <li><a href="https://x.com/McLarenF1">X (Formula 1 team)</a></li>
+          <li><a href="https://www.youtube.com/@McLaren">YouTube</a></li>
+        </ul>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 McLaren website. A student project, not an official McLaren website.</p>
+  </footer>
+
+</body>
+</html>
