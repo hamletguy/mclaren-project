@@ -1,81 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>McLaren | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <a href="index.html" class="logo">McLaren</a>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="models.html">Models</a></li>
-        <li><a href="racing.html">Racing</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar navbar-expand-md sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">McLaren</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+          <li class="nav-item"><a class="nav-link" href="racing.html">Racing</a></li>
+          <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PICTURE: wide hero photo of a McLaren. Set it as a background image on .hero in style.css -->
+  <header class="hero d-flex align-items-end">
+    <div class="container pb-5">
+      <h1 class="display-3 mb-3">Engineered for speed.<br>Built to win.</h1>
+      <p class="lead col-lg-6">McLaren is a British maker of supercars and a Formula 1 team, founded in 1963 by New Zealander Bruce McLaren. More than sixty years later, the papaya-orange cars are still racing at the front.</p>
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <a href="models.html" class="btn btn-primary btn-lg">Discover the models</a>
+        <a href="racing.html" class="btn btn-outline-light btn-lg">Go racing</a>
+      </div>
+    </div>
   </header>
 
-  <main>
-
-    <!-- Hero -->
-    <section class="hero">
-      <!-- PICTURE: wide hero photo of a McLaren (e.g. images/hero.jpg) -->
-      <div class="placeholder hero-image">Hero image: a McLaren on the road or track</div>
-      <div class="hero-text">
-        <h1>Engineered for speed. Built to win.</h1>
-        <p>McLaren is a British maker of supercars and a Formula 1 team, founded in 1963 by New Zealander Bruce McLaren. More than sixty years later, the papaya-orange cars are still racing at the front.</p>
-        <div class="buttons">
-          <a href="models.html" class="btn btn-primary">Discover the models</a>
-          <a href="racing.html" class="btn btn-secondary">Go racing</a>
+  <main class="container py-5">
+    <h2 class="mb-4">Highlights</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <!-- PICTURE: McLaren W1 -->
+        <div class="img-placeholder ">Picture: McLaren W1</div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Featured car: the McLaren W1</h3>
+              <p class="card-text text-secondary">The brand's hypercar flagship: a hybrid V8 with about 1,258 PS, limited to 399 cars.</p>
+              <a href="models.html" class="mt-auto fw-semibold">See all models &rarr;</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Highlights -->
-    <section class="highlights">
-      <h2>Highlights</h2>
-      <div class="card-grid">
-
-        <article class="card">
-          <!-- PICTURE: McLaren W1 -->
-          <div class="placeholder card-image">Picture: McLaren W1</div>
-          <h3>Featured car: the McLaren W1</h3>
-          <p>The brand's hypercar flagship: a hybrid V8 with about 1,258 PS, limited to 399 cars.</p>
-          <a href="models.html">See all models</a>
-        </article>
-
-        <article class="card">
-          <!-- PICTURE: Lando Norris celebrating -->
-          <div class="placeholder card-image">Picture: Lando Norris</div>
-          <h3>Latest news: a new World Champion</h3>
-          <p>In December 2025 Lando Norris won the Formula 1 Drivers' Championship with McLaren.</p>
-          <a href="news.html">Read more news</a>
-        </article>
-
-        <article class="card">
-          <!-- PICTURE: the 2026 McLaren F1 car -->
-          <div class="placeholder card-image">Picture: the 2026 F1 car</div>
-          <h3>The 2026 season</h3>
-          <p>Lando Norris and Oscar Piastri are fighting for podiums again. Check the latest standings.</p>
-          <a href="racing.html">See the racing page</a>
-        </article>
-
-      </div>
-    </section>
+        <div class="col">
+          <div class="card h-100">
+            <!-- PICTURE: Lando Norris -->
+        <div class="img-placeholder ">Picture: Lando Norris</div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Latest news: a new World Champion</h3>
+              <p class="card-text text-secondary">In December 2025 Lando Norris won the Formula 1 Drivers' Championship with McLaren.</p>
+              <a href="news.html" class="mt-auto fw-semibold">Read more news &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <!-- PICTURE: the 2026 F1 car -->
+        <div class="img-placeholder ">Picture: the 2026 F1 car</div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">The 2026 season</h3>
+              <p class="card-text text-secondary">Lando Norris and Oscar Piastri are fighting for podiums again. Check the latest standings.</p>
+              <a href="racing.html" class="mt-auto fw-semibold">See the racing page &rarr;</a>
+            </div>
+          </div>
+        </div>
+    </div>
 
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 McLaren website. A student project, not an official McLaren website.</p>
+  <footer class="border-top py-4 text-center text-secondary small">
+    <div class="container">&copy; 2026 McLaren website. A student project, not an official McLaren website.</div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

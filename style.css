@@ -1,0 +1,208 @@
+/* ==========================================================
+   McLaren website: small stylesheet on top of Bootstrap 5.
+   Bootstrap does the layout. This file only adds the dark
+   theme colours, the papaya-orange accent and a few extras.
+   ========================================================== */
+
+/* ---------- Colours ---------- */
+:root {
+  --papaya: #ff8000;
+  --papaya-dark: #e06f00;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #0d0d0d;
+  --bs-body-color: #f2f2f2;
+  --bs-secondary-color: #a3a3a3;
+  --bs-border-color: #2a2a2a;
+  --bs-link-color: var(--papaya);
+  --bs-link-hover-color: #ffa040;
+  --bs-link-color-rgb: 255, 128, 0;
+  --bs-link-hover-color-rgb: 255, 160, 64;
+}
+
+/* ---------- Text ---------- */
+h1,
+.display-3 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+}
+
+/* Bootstrap's grey text is too dark on this background */
+.text-secondary {
+  color: var(--bs-secondary-color) !important;
+}
+
+h2, h3 {
+  font-weight: 700;
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+  background: rgba(13, 13, 13, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.navbar-brand::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: var(--papaya);
+}
+
+.nav-link.active {
+  color: var(--papaya) !important;
+}
+
+/* ---------- Buttons: Bootstrap's primary becomes papaya ---------- */
+.btn-primary {
+  --bs-btn-color: #111;
+  --bs-btn-bg: var(--papaya);
+  --bs-btn-border-color: var(--papaya);
+  --bs-btn-hover-color: #111;
+  --bs-btn-hover-bg: var(--papaya-dark);
+  --bs-btn-hover-border-color: var(--papaya-dark);
+  --bs-btn-active-color: #111;
+  --bs-btn-active-bg: var(--papaya-dark);
+  --bs-btn-active-border-color: var(--papaya-dark);
+  font-weight: 600;
+}
+
+.btn-outline-light:hover {
+  --bs-btn-hover-bg: var(--papaya);
+  --bs-btn-hover-border-color: var(--papaya);
+  --bs-btn-hover-color: #111;
+}
+
+.btn-outline-secondary {
+  --bs-btn-hover-bg: var(--papaya);
+  --bs-btn-hover-border-color: var(--papaya);
+  --bs-btn-hover-color: #111;
+}
+
+/* ---------- Cards, badges, form fields ---------- */
+.card {
+  --bs-card-bg: #161616;
+  --bs-card-border-color: #2a2a2a;
+  --bs-card-cap-bg: #161616;
+}
+
+.badge-papaya {
+  background: rgba(255, 128, 0, 0.15);
+  color: var(--papaya);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.form-control,
+.form-select {
+  background-color: #0f0f0f;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--papaya);
+  box-shadow: 0 0 0 0.25rem rgba(255, 128, 0, 0.25);
+}
+
+/* ---------- Home: hero ---------- */
+.hero {
+  min-height: 75vh;
+  background:
+    radial-gradient(ellipse at 75% 30%, rgba(255, 128, 0, 0.4), transparent 60%),
+    linear-gradient(160deg, #1d1d1d, #0d0d0d);
+  /* Once you have a hero photo, use this instead:
+  background:
+    linear-gradient(to top, rgba(13, 13, 13, 0.95), rgba(13, 13, 13, 0.3)),
+    url("images/hero.jpg") center / cover; */
+}
+
+/* ---------- Pictures ----------
+   .img-placeholder is the grey box shown until you add real pictures.
+   Replace a box with <img src="images/x.jpg" alt="..." class="img-fluid rounded">. */
+.img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 10;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #7d7d7d;
+  background:
+    radial-gradient(circle at 80% 15%, rgba(255, 128, 0, 0.16), transparent 55%),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0 12px, transparent 12px 24px),
+    linear-gradient(135deg, #1a1a1a, #262626);
+}
+
+.card > .img-placeholder {
+  border-radius: 0;
+}
+
+.img-placeholder.wide { aspect-ratio: 16 / 9; }
+.img-placeholder.tall { aspect-ratio: 3 / 4; }
+.img-placeholder.square { aspect-ratio: 1; }
+.img-placeholder.fill { aspect-ratio: auto; height: 100%; min-height: 200px; border-radius: 0; }
+
+/* ---------- Racing ---------- */
+.nat {
+  color: var(--papaya);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mclaren-row {
+  --bs-table-bg: rgba(255, 128, 0, 0.16);
+  --bs-table-color: #fff;
+}
+
+/* Standings table: narrow position column */
+.table th:first-child,
+.table td:first-child {
+  width: 5rem;
+}
+
+/* ---------- History: timeline ---------- */
+.timeline {
+  position: relative;
+  margin: 0;
+  padding-left: 2rem;
+  border-left: 2px solid var(--bs-border-color);
+}
+
+.timeline li {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  left: calc(-2rem - 7px);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--papaya);
+  box-shadow: 0 0 0 4px var(--bs-body-bg);
+}
+
+.timeline h3 {
+  color: var(--papaya);
+}
