@@ -29,7 +29,7 @@
     </div>
   </nav>
 
-  <!-- PICTURE: wide hero photo of a McLaren. Set it as a background image on .hero in style.css -->
+  <!-- Hero photo is set as the background of .hero in style.css -->
   <header class="hero d-flex align-items-end">
     <div class="container pb-5">
       <h1 class="display-3 mb-3">Engineered for speed.<br>Built to win.</h1>
@@ -41,10 +41,9 @@
     </div>
   </header>
 
-  <!-- Bootstrap carousel. To use a real photo, replace the .img-placeholder div of a slide with:
-       <img src="images/x.jpg" class="d-block w-100" alt="..."> -->
+  <!-- Bootstrap carousel -->
   <section class="container pt-5" aria-label="Featured stories">
-    <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-theme="light" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -53,27 +52,24 @@
 
       <div class="carousel-inner rounded">
         <div class="carousel-item active">
-          <!-- PICTURE: McLaren W1 -->
-          <div class="img-placeholder carousel-slide">Picture: McLaren W1</div>
+          <img src="pictures/artura%20spider.jpg" class="d-block w-100 carousel-slide" style="object-position: 50% 65%;" alt="Orange McLaren Artura Spider parked on a mountain road">
+          <div class="carousel-caption text-start">
+            <h3 class="h4">The McLaren Artura Spider</h3>
+            <p class="mb-0 d-none d-sm-block">The open-top hybrid supercar, with a V6 engine and an electric motor.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/w1.jpg" class="d-block w-100 carousel-slide" style="object-position: 50% 65%;" alt="Orange McLaren W1 hypercar with its doors open, seen from the front">
           <div class="carousel-caption text-start">
             <h3 class="h4">The McLaren W1</h3>
             <p class="mb-0 d-none d-sm-block">A hybrid V8 hypercar with about 1,258 PS, limited to 399 cars.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <!-- PICTURE: Lando Norris celebrating the title -->
-          <div class="img-placeholder carousel-slide">Picture: Lando Norris, 2025 World Champion</div>
+          <img src="pictures/labdo-and-oscar.jpg" class="d-block w-100 carousel-slide" style="object-position: 50% 18%;" alt="Lando Norris and Oscar Piastri in McLaren race suits, smiling">
           <div class="carousel-caption text-start">
-            <h3 class="h4">A new World Champion</h3>
-            <p class="mb-0 d-none d-sm-block">Lando Norris won the Formula 1 Drivers' Championship in December 2025.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!-- PICTURE: the 2026 F1 car -->
-          <div class="img-placeholder carousel-slide">Picture: the 2026 F1 car</div>
-          <div class="carousel-caption text-start">
-            <h3 class="h4">The 2026 season</h3>
-            <p class="mb-0 d-none d-sm-block">Norris and Piastri are fighting for podiums again.</p>
+            <h3 class="h4">Our drivers</h3>
+            <p class="mb-0 d-none d-sm-block">Lando Norris, the 2025 World Champion, and Oscar Piastri.</p>
           </div>
         </div>
       </div>
@@ -94,8 +90,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <!-- PICTURE: McLaren W1 -->
-        <div class="img-placeholder ">Picture: McLaren W1</div>
+            <img src="pictures/w1.jpg" class="card-img-top pic" style="object-position: 50% 60%;" alt="Orange McLaren W1 hypercar with its doors open" loading="lazy">
             <div class="card-body d-flex flex-column">
               <h3 class="h5 card-title">Featured car: the McLaren W1</h3>
               <p class="card-text text-secondary">The brand's hypercar flagship: a hybrid V8 with about 1,258 PS, limited to 399 cars.</p>
@@ -105,8 +100,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <!-- PICTURE: Lando Norris -->
-        <div class="img-placeholder ">Picture: Lando Norris</div>
+            <img src="pictures/Lando%20Norris,%202025%20World%20Champion.jpg" class="card-img-top pic" style="object-position: 50% 25%;" alt="Lando Norris, 2025 Formula 1 World Champion" loading="lazy">
             <div class="card-body d-flex flex-column">
               <h3 class="h5 card-title">Latest news: a new World Champion</h3>
               <p class="card-text text-secondary">In December 2025 Lando Norris won the Formula 1 Drivers' Championship with McLaren.</p>
@@ -116,8 +110,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <!-- PICTURE: the 2026 F1 car -->
-        <div class="img-placeholder ">Picture: the 2026 F1 car</div>
+            <img src="pictures/2026.jpg" class="card-img-top pic" alt="The 2026 McLaren Formula 1 car in the pit lane" loading="lazy">
             <div class="card-body d-flex flex-column">
               <h3 class="h5 card-title">The 2026 season</h3>
               <p class="card-text text-secondary">Lando Norris and Oscar Piastri are fighting for podiums again. Check the latest standings.</p>
