@@ -158,6 +158,37 @@ h2, h3 {
 .img-placeholder.square { aspect-ratio: 1; }
 .img-placeholder.fill { aspect-ratio: auto; height: 100%; min-height: 200px; border-radius: 0; }
 
+/* ---------- Home: carousel ---------- */
+.carousel-slide {
+  aspect-ratio: 21 / 9;
+  border-radius: 0;
+}
+
+@media (max-width: 767.98px) {
+  .carousel-slide { aspect-ratio: 16 / 10; }
+}
+
+/* Dark gradient behind captions so the text stays readable over photos */
+.carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 3rem 4rem 2.5rem;
+  background: linear-gradient(to top, rgba(13, 13, 13, 0.9), transparent);
+}
+
+.carousel-caption h3 {
+  color: var(--papaya);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--papaya);
+}
+
+@media (max-width: 575.98px) {
+  .carousel-caption { padding: 2rem 3rem 2.5rem; }
+}
+
 /* ---------- Racing ---------- */
 .nat {
   color: var(--papaya);

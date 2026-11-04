@@ -41,6 +41,54 @@
     </div>
   </header>
 
+  <!-- Bootstrap carousel. To use a real photo, replace the .img-placeholder div of a slide with:
+       <img src="images/x.jpg" class="d-block w-100" alt="..."> -->
+  <section class="container pt-5" aria-label="Featured stories">
+    <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <!-- PICTURE: McLaren W1 -->
+          <div class="img-placeholder carousel-slide">Picture: McLaren W1</div>
+          <div class="carousel-caption text-start">
+            <h3 class="h4">The McLaren W1</h3>
+            <p class="mb-0 d-none d-sm-block">A hybrid V8 hypercar with about 1,258 PS, limited to 399 cars.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- PICTURE: Lando Norris celebrating the title -->
+          <div class="img-placeholder carousel-slide">Picture: Lando Norris, 2025 World Champion</div>
+          <div class="carousel-caption text-start">
+            <h3 class="h4">A new World Champion</h3>
+            <p class="mb-0 d-none d-sm-block">Lando Norris won the Formula 1 Drivers' Championship in December 2025.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- PICTURE: the 2026 F1 car -->
+          <div class="img-placeholder carousel-slide">Picture: the 2026 F1 car</div>
+          <div class="carousel-caption text-start">
+            <h3 class="h4">The 2026 season</h3>
+            <p class="mb-0 d-none d-sm-block">Norris and Piastri are fighting for podiums again.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
   <main class="container py-5">
     <h2 class="mb-4">Highlights</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
