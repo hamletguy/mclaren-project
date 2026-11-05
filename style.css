@@ -1,9 +1,3 @@
-/* ==========================================================
-   McLaren website: small stylesheet on top of Bootstrap 5.
-   Bootstrap does the layout. This file only adds the dark
-   theme colours, the papaya-orange accent and a few extras.
-   ========================================================== */
-
 /* ---------- Colours ---------- */
 :root {
   --papaya: #ff8000;
@@ -134,9 +128,7 @@ h2, h3 {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
-/* ---------- Pictures ----------
-   .img-placeholder is the grey box shown until you add real pictures.
-   Replace a box with <img src="images/x.jpg" alt="..." class="img-fluid rounded">. */
+/* ---------- Pictures ---------- */
 .img-placeholder {
   display: flex;
   align-items: center;
@@ -157,9 +149,7 @@ h2, h3 {
   border-radius: 0;
 }
 
-/* Real pictures: every image fills a fixed-ratio frame and is cropped to fit,
-   so cards line up even when the photos have different shapes.
-   Adjust the crop of one picture with style="object-position: 50% 30%;" */
+
 .pic {
   display: block;
   width: 100%;
@@ -184,7 +174,7 @@ h2, h3 {
   object-fit: cover;
 }
 
-/* Round driver portraits (the source pictures have white backgrounds) */
+
 .avatar {
   display: block;
   width: 150px;
